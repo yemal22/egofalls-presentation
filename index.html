@@ -12,7 +12,7 @@ body.overview{overflow:auto}body.overview main{position:static}.overview section
 @media(max-width:820px),(max-aspect-ratio:1/1){section{padding:8vh 4vw 9vh;gap:1.2vh;overflow:auto}h1,h2{font-size:clamp(1.3rem,4vw,1.8rem)}p,li,.statement,.question-main{font-size:clamp(1rem,3vw,1.5rem)}.grid{grid-template-columns:1fr;gap:1.2vh;flex:none;margin:auto 0}.card{padding:1.5vh 2vw;gap:.5vh}.card strong{font-size:1.4rem}.card p{font-size:1.1rem}.rail{gap:1vw}.box{padding:1.5vh 1vw;font-size:1.1rem}.photo-grid,.audit-chart,.exploration-chart{height:auto!important;max-height:53vh}.graph-frame{width:100%}section:first-child .aims-logo{position:static;width:180px;height:60px}.source-line,.caption{font-size:.85rem}header{left:4vw;right:4vw}header button{font-size:9px}.metric,.motivation-stat{font-size:3rem}.formula{font-size:1.4rem}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{html,body{height:auto;overflow:visible}main{position:static}header,footer,#notes{display:none!important}section{position:relative;display:flex!important;height:100vh;break-after:page;padding:6vh 6vw}.reveal{opacity:1;transform:none}.reveal.graph-cover{opacity:0!important}body{print-color-adjust:exact}}
-.published-visual{width:100%;margin:0}.published-visual img{width:100%;height:20vh;object-fit:contain}.published-visual figcaption,.published-snapshot figcaption{font-size:clamp(.9rem,1.3vw,1.2rem);color:var(--muted);margin-top:.6vh}.published-visual+.grid .card p{font-size:clamp(1.1rem,1.65vw,1.55rem)}.published-snapshot{display:flex;align-items:center;gap:2vw;margin:0}.scene-crop{width:29vh;height:22vh;overflow:hidden;flex:none;border-radius:8px}.scene-crop img{display:block;width:auto!important;height:100%!important;max-width:none!important;object-fit:fill!important}.published-snapshot figcaption{max-width:32em}.published-snapshot+.grid .card{padding:1.6vh 1.2vw}</style><!-- Typography: Carlito by Łukasz Dziedzic, Copyright 2013 The Carlito Project Authors. Licensed under SIL OFL 1.1; see assets/fonts/OFL.txt. -->
+.published-visual{width:100%;margin:0}.published-visual img{width:100%;height:20vh;object-fit:contain}.published-visual figcaption,.published-snapshot figcaption{font-size:clamp(.9rem,1.3vw,1.2rem);color:var(--muted);margin-top:.6vh}.published-visual+.grid .card p{font-size:clamp(1.1rem,1.65vw,1.55rem)}.published-snapshot{display:flex;align-items:center;gap:2vw;margin:0}.scene-crop{width:29vh;height:22vh;overflow:hidden;flex:none;border-radius:8px}.scene-crop img{display:block;width:auto!important;height:100%!important;max-width:none!important;object-fit:fill!important}.published-snapshot figcaption{max-width:32em}.published-snapshot+.grid .card{padding:1.6vh 1.2vw}.video-examples{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:2.4vw;align-items:center}.video-examples figure{margin:0;display:flex;flex-direction:column;gap:1.2vh;min-width:0}.video-examples video{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#0f172a;border-radius:10px}.video-examples figcaption{font-size:clamp(1.2rem,2vw,1.9rem)}.video-examples figcaption b{display:block}.video-examples figcaption span{display:block;font-size:.65em;color:var(--muted);margin-top:.4vh}.evidence-strip{display:grid;grid-template-columns:1fr 1fr;gap:2vw;width:100%;align-items:start}.evidence-strip.three{grid-template-columns:repeat(3,1fr)}.evidence-strip figure{margin:0;min-width:0}.evidence-strip img{display:block;width:100%;height:21vh;object-fit:cover;border-radius:10px}.evidence-strip figcaption{font-size:clamp(.9rem,1.3vw,1.2rem);color:var(--muted);margin-top:.5vh}.evidence-strip+.grid .card{padding:1.6vh 1.2vw}.evidence-strip+.grid .card strong{font-size:clamp(1.4rem,2.2vw,2rem)}.evidence-strip+.grid .card p{font-size:clamp(1.1rem,1.65vw,1.55rem)}@media(max-width:820px),(max-aspect-ratio:1/1){.video-examples{grid-template-columns:1fr;gap:2vh}.video-examples video{max-height:26vh}.evidence-strip img{height:15vh}}</style><!-- Typography: Carlito by Łukasz Dziedzic, Copyright 2013 The Carlito Project Authors. Licensed under SIL OFL 1.1; see assets/fonts/OFL.txt. -->
 </head><body>
 <header aria-label="Presentation sections"></header><main>
 <section data-group="Question" data-note="Opening draft. This presentation describes the current experiment design. Do not present pending experiments as achieved performance."><div class="eyebrow">Visual perception · Research in progress</div><img class="aims-logo" src="https://aims.ac.za/images/logo_hu10911764487100562301.png" alt="AIMS South Africa"><h1>EgoFalls</h1><p class="statement">Detecting falls from<br>video and sound.</p><p class="muted">Video and audio for egocentric fall detection</p><p class="caption">Brummel Duasenge · Liantsoa Rantoniaina<br>Morel Yemalin · Pape Malick</p></section>
@@ -24,6 +24,14 @@ body.overview{overflow:auto}body.overview main{position:static}.overview section
 <div class="eyebrow">Question / What the camera sees</div><h2>The camera moves with the person.</h2>
 <img class="photo-grid" src="https://github.com/Xueyi-Wang/EGOFALLS/assets/55747740/fc7cc58f-1c8e-4c08-8da5-4b9caef27134" alt="Dataset authors' montage of camera recordings showing twelve staged activities: four types of falls and eight non-fall activities.">
 <p class="caption">Real recordings of staged activities · four fall types and eight non-fall activities.</p><p class="source-line">Image: <a href="https://github.com/Xueyi-Wang/EGOFALLS" target="_blank" rel="noopener">Wang · EGOFALLS dataset repository</a>. Staged recordings do not establish performance on accidental falls.</p></section>
+<section data-group="Question" data-note="Real recordings from vundle/egofalls-v2. Both examples are participant S_FI, Indoor, Neck camera. Left: falls/back_falls/Back_lying/Neck/S_FI_Back_lying_Neck_1.MOV, approximately 11 seconds. Right: nonfalls/Bending/bending/Neck/S_FI_bending_Neck_1.MOV, approximately 5 seconds. They are staged dataset activities, not accidental falls or model predictions. Sound is preserved, AAC encoded, and starts only after a user playback action. Play one at a time; playback stops and resets when the slide/reveal is left.">
+<h2>Watch and listen: fall or everyday movement?</h2>
+<div class="video-examples">
+<figure><video controls playsinline preload="metadata" poster="assets/examples/falls-4.jpg" aria-label="Staged backward fall, with original audio" tabindex="0"><source src="assets/examples/falls.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/examples/falls.mp4">Download the fall clip</a>.</video><figcaption><b>Fall</b><span>Staged backward fall · S_FI · neck camera</span></figcaption></figure>
+<figure><video controls playsinline preload="metadata" poster="assets/examples/nonfalls-1.jpg" aria-label="Non-fall bending action, with original audio" tabindex="0"><source src="assets/examples/nonfalls.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/examples/nonfalls.mp4">Download the non-fall clip</a>.</video><figcaption><b>Non-fall</b><span>Bending · S_FI · neck camera</span></figcaption></figure>
+</div>
+<p class="caption">Press Play to hear the original audio. Compare viewpoint changes and sound; only one clip plays at a time.</p>
+<p class="source-line">Real staged recordings · <a href="https://www.kaggle.com/datasets/vundle/egofalls-v2" target="_blank" rel="noopener">EgoFalls v2 (Kaggle mirror, CC0)</a> · Dataset: Xueyi Wang · <a href="assets/examples/SOURCES.md" target="_blank" rel="noopener">Clip provenance</a>.</p></section>
 <section data-group="Question" data-note="A fixed camera requires coverage of the person and environment. A wearable camera follows the user, but moves during normal activities as well. EGOFALLS documents impact and vocal sounds as potential fall-related audio patterns, while noting that not every clip contains every sound type. Audio is complementary evidence rather than a guaranteed fall cue.">
 <div class="eyebrow">Question / The technical challenge</div><h2>Movement alone can be misleading.</h2><div class="grid"><div class="card"><strong>Coverage</strong><p>A wearable camera follows the person beyond one fixed camera's field of view.</p></div><div class="card reveal"><strong>Ambiguity</strong><p>Bending, sitting or handling the camera can also create sudden motion.</p></div><div class="card reveal"><strong>Complementarity</strong><p>Impact or vocal sounds may help—but everyday sounds can also mislead.</p></div></div><p class="source-line">Context: <a href="https://arxiv.org/abs/2309.04579" target="_blank" rel="noopener">Wang · EGOFALLS (2023)</a>. Wearable video and audio still raise privacy and practical-use questions.</p></section>
 <section data-group="Question" data-note="State the exact testable research question. Compare video-only, audio-only and fused models on the same held-out participants and clips. The long-term intended use is an assistive alert system, while the current scope is offline clip-level detection. We are not predicting a fall before it occurs.">
@@ -67,6 +75,7 @@ const builds=slides.map(slide=>{
   const add=(el,k)=>{el.classList.add('reveal');el.dataset.step=k;};
   [...slide.children].forEach(el=>{
     if(el.matches('h1,h2,.eyebrow,.source-line'))return;
+    if(el.matches('.video-examples')){[...el.children].forEach(child=>add(child,++step));return;}
     if(el.matches('.grid')){[...el.children].forEach(child=>add(child,++step));return;}
     if(el.matches('.rail')){
       const objects=[...el.querySelectorAll('.box,.arrow')];
@@ -97,6 +106,8 @@ function readLocation(){
  const i=m?Math.max(0,Math.min(slides.length-1,+m[1]-1)):0;
  return {slide:i,beat:m?(m[2]===undefined?builds[i].length:Math.min(+m[2],builds[i].length)):0,blank:!!m?.[3]};
 }
+function syncMedia(){document.querySelectorAll('video').forEach(video=>{const owner=video.closest('section'),fragment=video.closest('.reveal');const visible=owner?.classList.contains('active')&&!blank&&(!fragment||fragment.classList.contains('shown'));if(!visible){video.pause();if(video.currentTime)video.currentTime=0;}});}
+document.querySelectorAll('video').forEach(video=>video.addEventListener('play',()=>{document.querySelectorAll('video').forEach(other=>{if(other!==video)other.pause();});}));
 function resetControls(){
  const select=document.querySelector('#sampling');select.value='uniform';sampling();
  for(const id of ['pv','pa','weight']){const el=document.querySelector('#'+id);el.value=el.defaultValue;}
@@ -108,6 +119,7 @@ function render(){
    if(i===current) builds[i].forEach((group,k)=>group.forEach(el=>el.classList.toggle('shown',k<beat)));
  });
  document.body.classList.toggle('preblank',blank);
+ syncMedia();
  const group=slides[current].dataset.group,gi=groups.indexOf(group);
  [...nav.children].forEach((b,i)=>{
    b.classList.toggle('active',i===gi);b.classList.toggle('done',i<gi);
@@ -146,7 +158,7 @@ document.querySelector('#next').onclick=next;
 document.querySelector('#note-toggle').onclick=notes;
 document.querySelector('#overview').onclick=overview;
 document.querySelector('main').addEventListener('click',e=>{
- if(e.target.closest('a,button,input,select,label')||document.body.classList.contains('overview'))return;next();
+ if(e.target.closest('a,button,input,select,label,video')||document.body.classList.contains('overview'))return;next();
 });
 document.addEventListener('keydown',e=>{
  if(e.ctrlKey||e.metaKey||e.altKey||e.target.closest('input,select,textarea,[contenteditable=true]'))return;
