@@ -1,0 +1,15 @@
+{
+  "config_id": "e8649ada5536fb10",
+  "version": "fullclip_uniform_raft_v2",
+  "scan_fps": 4,
+  "width": 160,
+  "max_seconds": 120,
+  "appearance_frames": 32,
+  "max_flow_pairs": 16,
+  "raft_updates": 6,
+  "resnet_weight_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "raft_weight_sha256": "01064c6dba73b0fc9fc8edf772248560a00a3acfd62ac6677e9eeebad9680e27",
+  "torch": "2.11.0+cu130",
+  "torchvision": "0.26.0+cu130",
+  "sampling": "uniform_fullclip"
+}
