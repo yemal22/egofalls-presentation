@@ -1,0 +1,8 @@
+gradio>=5,<6
+numpy
+pandas
+matplotlib
+joblib
+scikit-learn
+torch
+torchvision
